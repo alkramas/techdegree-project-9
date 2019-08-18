@@ -1,0 +1,30 @@
+/*******************************
+base styles
+*******************************/
+* {
+
+  box-sizing: border-box;
+}
+html {
+      /* background: #2F4454; */
+      /* background: #5D5C61; */
+}
+body {
+  /* margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+h1, h2, h3 {
+  /* color: #cececf; */
+  /* color: #2e2e30;
+  font-weight: normal; */
+  font-family: 'Codystar', cursive;
+}
+p, a {
+  font-family: 'Noto Serif', serif;
+  /* color: #2e2e30; */
+}
+/*******************************
+
+*******************************/
