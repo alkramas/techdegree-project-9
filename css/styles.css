@@ -14,12 +14,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; */
+  /* background-image: linear-gradient(to top, #708dc2, #709acb, #72a6d3, #75b2da, #7bbee0, #81c3e4, #88c8e8, #8ecdec, #95ccef, #9dcaf1, #a6c9f2, #afc7f2); */
+  background-image: linear-gradient(to bottom, #7a818e, #7f8a99, #8494a3, #889ead, #8ca8b6, #8bb0bb, #8bb9be, #8ec1bf, #96c7b6, #a7cca9, #c0ce9e, #dccd98);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 h1, h2, h3 {
   /* color: #cececf; */
   /* color: #2e2e30;
   font-weight: normal; */
-  font-family: 'Codystar', cursive;
+  /* font-family: 'Codystar', cursive; */
+  font-family: 'Beth Ellen', cursive;
 }
 p, a {
   font-family: 'Noto Serif', serif;
