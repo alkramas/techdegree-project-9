@@ -20,16 +20,37 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
 }
-h1, h2, h3 {
+div.cover-container::after {
+  content:"";
+  background: url('../images/deadsea.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:bottom;
+  opacity:0.1;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+h1, h2, h3, .navbar-brand {
   /* color: #cececf; */
   /* color: #2e2e30;
   font-weight: normal; */
-  /* font-family: 'Codystar', cursive; */
-  font-family: 'Beth Ellen', cursive;
+  font-family: 'Codystar', cursive;
+  /* font-family: 'Beth Ellen', cursive; */
 }
 p, a {
   font-family: 'Noto Serif', serif;
   /* color: #2e2e30; */
+}
+img.contact-home {
+  border-radius: 50%;
+  width: 4em;
+  opacity: 0.8;
+  border: rgba(240,240,240, .6) 3px solid;
 }
 /*******************************
 
