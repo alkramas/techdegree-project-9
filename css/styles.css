@@ -52,6 +52,9 @@ img.contact-home {
   opacity: 0.8;
   border: rgba(240,240,240, .6) 3px solid;
 }
+div.jumbotron, input.form-control {
+  background-color: transparent;
+}
 /*******************************
 
 *******************************/
