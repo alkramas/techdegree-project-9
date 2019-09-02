@@ -38,7 +38,7 @@ div.cover-container::after {
   right: 0;
   position: absolute;
 }
-h1, h2, h3, h4, .navbar-brand {
+h1, h2, h3, h4, h5, .navbar-brand {
   /* color: #cececf; */
   /* color: #2e2e30;
   font-weight: normal; */
