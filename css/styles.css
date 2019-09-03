@@ -11,11 +11,10 @@ html {
     display: table;
 }
 body {
-
+  position: relative;
   background-image: linear-gradient(to bottom, #7a818e, #7f8a99, #8494a3, #889ead, #8ca8b6, #8bb0bb, #8bb9be, #8ec1bf, #96c7b6, #a7cca9, #c0ce9e, #dccd98);
   background-size: cover;
   background-repeat: no-repeat;
-
   width:100%;
   display:table-cell;
 }
@@ -23,7 +22,8 @@ html, body {
     margin: 0px;
     padding: 0px;
 }
-div.cover-container::after {
+
+body::after {
   content:"";
   background: url('../images/deadsea.png');
   background-size:cover;
@@ -50,7 +50,7 @@ h4 {
   /* font-style: italic; */
   font-size: 1.5em;
 }
-p, a {
+li, p, a {
   font-family: 'Noto Serif', serif;
   /* color: #2e2e30; */
 }
@@ -58,12 +58,88 @@ p, a {
 img.contact-home {
   border-radius: 50%;
   width: 2.5em;
-  opacity: 0.8;
   border: rgba(240,240,240, .6) 3px solid;
 }
 div.jumbotron, input.form-control {
   background-color: transparent;
 }
+div.jumbotron {
+  padding: 1rem 2rem 2rem 2rem;
+}
 /*******************************
-
+  footer navbar
 *******************************/
+/* #navbarHeader {
+  opacity: 0.5;
+} */
+/*******************************
+  svg elements
+*******************************/
+.svg-compass {
+  width: 40%;
+  max-width: 300px;
+  opacity: .9;
+}
+
+@keyframes compass {
+  10% {
+    transform: rotate(150deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+@keyframes compass2 {
+  10% {
+    transform: rotate(300deg);
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  70% {
+    transform: rotate(600deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+.svg-compass {
+  animation: compass 2.75s;
+  animation-timing-function: ease-out;
+  transform-origin: 50% 50%;
+  transform: rotate(30deg) scale(1);
+}
+
+.svg-compass:hover {
+  animation: compass2 2.75s;
+  animation-timing-function: ease-out;
+  transform-origin: 50% 50%;
+  transform: rotate(30deg) scale(1);
+}
+
+@keyframes outerring {
+  10% {
+    transform: rotate(120deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  70% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.outer-ring  {
+  animation: outerring 3.25s;
+  animation-timing-function: ease-out;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg) scale(1);
+}
