@@ -96,14 +96,8 @@ div.jumbotron {
   }
 }
 @keyframes compass2 {
-  10% {
-    transform: rotate(300deg);
-  }
-  50% {
-    transform: rotate(80deg);
-  }
   70% {
-    transform: rotate(600deg);
+    transform: rotate(80deg);
   }
   100% {
     transform: rotate(30deg);
@@ -142,4 +136,20 @@ div.jumbotron {
   animation-timing-function: ease-out;
   transform-origin: 50% 50%;
   transform: rotate(0deg) scale(1);
+}
+
+
+.graphic-emplydir {
+  opacity: .4;
+  transform: scale(.6);
+  transition: 1s all ease-out;
+  /* animation: compass 2.75s;
+  animation-timing-function: ease-out;
+  transform-origin: 50% 50%;
+  transform: rotate(30deg) scale(.6); */
+}
+
+.graphic-emplydir:hover, .graphic-dashoard:hover {
+  opacity: .6;
+  transform: scale(1);
 }

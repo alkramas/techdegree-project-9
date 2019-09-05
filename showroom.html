@@ -37,9 +37,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Details</a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">Contact</a>
+                </li>
               </ul>
               <!-- <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -112,13 +112,41 @@
 
           </div>
           <div class="container">
-            <h1 class="jumbotron-heading text-white">WELCOME</h1>
+            <h1 class="jumbotron-heading">WELCOME</h1>
             <p class="lead">Simply browse through all projects or search according to skills used to create the individual works.</p>
             <!-- <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form> -->
-            <button type="button" class="btn btn-sm btn-outline-secondary badge-pill" data-toggle="modal" data-target="#exampleModalCenter">Filter Projects</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modalFilter">Filter Projects</button>
+            <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -128,51 +156,77 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4">
                   <div class="card mb-4 shadow-sm bg-transparent">
-                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-                    <!-- <img class="mx-auto mt-4 rounded-circle border border-white img-fluid" src="images/me.png"> -->
-                    <div class="card-body">
-                      <h5 class="card-title">Employee Directory</h5>
-                      <p class="card-text">Requesting data of random employees from an API and displaying their Information. The Navigation, Search and Filtering utilities were built custom with Javascript.</p>
-                      <div class="d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" class="graphic-emplydir" viewBox="0 0 300 200">
+                      <style>
+                        .st0{fill:none;stroke:#343a40;stroke-miterlimit:10}
+                      </style>
+                      <path d="M97.82 96.58l-63 2.73c-2.75.12-5-3.28-5-7.55V40.14c0-4.27 2.25-7.64 5-7.49l63 3.53c2.75.15 5 3.4 5 7.21v46.03c0 3.82-2.25 7.04-5 7.16zM181.82 92.94l-63 2.73c-2.75.12-5-2.85-5-6.59V43.89c0-3.74 2.25-6.68 5-6.52l63 3.53c2.75.15 5 2.96 5 6.25v39.62c0 3.27-2.25 6.05-5 6.17zM265.82 89.3l-63 2.73c-2.75.12-5-2.41-5-5.62V47.63c0-3.21 2.25-5.71 5-5.56l63 3.53c2.75.15 5 2.53 5 5.28v33.2c0 2.76-2.25 5.11-5 5.22zM97.82 172.06l-63 10.55c-2.75.46-5-2.66-5-6.93v-51.61c0-4.27 2.25-7.92 5-8.11l63-4.29c2.75-.19 5 2.78 5 6.59v46.03c0 3.81-2.25 7.31-5 7.77zM181.82 157.99l-63 10.55c-2.75.46-5-2.22-5-5.97v-45.19c0-3.74 2.25-6.96 5-7.15l63-4.29c2.75-.19 5 2.34 5 5.63v39.62c0 3.28-2.25 6.34-5 6.8zM265.82 143.93l-63 10.55c-2.75.46-5-1.79-5-5V110.7c0-3.21 2.25-5.99 5-6.18l63-4.29c2.75-.19 5 1.91 5 4.66v33.2c0 2.75-2.25 5.37-5 5.84z" class="st0"/>
+                    </svg>
+
+                    <div class="card-body d-flex">
+                      <div class="flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">Employee Directory</h5>
+                        <p class="card-text">Requesting data of random employees from an API and displaying their Information. The Navigation, Search and Filtering utilities were built custom with Javascript.</p>
+
                         <div class="btn-group">
                           <a href="projects/techdegree-project-8/index.html" target="_blank">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#exampleModalCenter">Details</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="collapse" data-target="#collapseProject1" aria-expanded="false" aria-controls="collapseProject1">Details</button>
                         </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body text-left">
-                                <ul>
-                                  <li>HTML</li>
-                                  <li>CSS</li>
-                                  <li>SASS</li>
-                                  <li>JavaScript</li>
-                                </ul>
-                              </div>
-                              <div class="modal-footer">
-                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
+                      </div>
+                      <div class="collapse flex-column" id="collapseProject1">
+                        <div class="card-body text-left">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h5>Specific Skills</h5>
+                              <p>JavaScript:</p>
+                              <ul>
+                                <li>Access API using fetch</li>
+                                <li>Display information in cards from template literals</li>
+                                <li>Modal window with jquery plugin with extra infos and custom navigation</li>
+                                <li>Custom Filter functions using data from API with reset of unused filter and search entries</li>
+                                <li>Search functions with message when no results are returned and reset of filters</li>
+                              </ul>
+                              <p>HTML/CSS:</p>
+                              <ul>
+                                <li>Mobile first approach</li>
+                                <li>Flex grid</li>
+                                <li>Hover states</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <h5>Additional Info</h5>
+                              <p>Project time: <span>20 hours</span></p>
+                              <p>Grade: <span>«exceeds expectations»</span></p>
+                              <p>Reviewer Comments: "Truly one of the sharpest looking API projects I have seen..."</p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                   <div class="card mb-4 shadow-sm bg-transparent">
-                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
-                    <!-- <img class="mx-auto mt-4 rounded-circle border border-white img-fluid" src="images/me.png"> -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 200" class="graphic-emplydir">
+                      <style>
+                        .st0,.st1{fill:none;stroke:#343a40;stroke-miterlimit:10}.st1{stroke-width:2;stroke-linecap:round}.st2{fill:#343a40}
+                      </style>
+                      <path d="M97.82-124.42l-63 2.73c-2.75.12-5-3.28-5-7.55v-51.61c0-4.27 2.25-7.64 5-7.49l63 3.53c2.75.15 5 3.4 5 7.21v46.03c0 3.81-2.25 7.03-5 7.15zM181.82-128.06l-63 2.73c-2.75.12-5-2.85-5-6.59v-45.19c0-3.74 2.25-6.68 5-6.52l63 3.53c2.75.15 5 2.96 5 6.25v39.62c0 3.27-2.25 6.05-5 6.17zM265.82-131.7l-63 2.73c-2.75.12-5-2.41-5-5.62v-38.78c0-3.21 2.25-5.71 5-5.56l63 3.53c2.75.15 5 2.53 5 5.28v33.2c0 2.76-2.25 5.11-5 5.22zM97.82-48.94l-63 10.55c-2.75.46-5-2.66-5-6.93v-51.61c0-4.27 2.25-7.92 5-8.11l63-4.29c2.75-.19 5 2.78 5 6.59v46.03c0 3.81-2.25 7.31-5 7.77zM181.82-63.01l-63 10.55c-2.75.46-5-2.22-5-5.97v-45.19c0-3.74 2.25-6.96 5-7.15l63-4.29c2.75-.19 5 2.34 5 5.63v39.62c0 3.28-2.25 6.34-5 6.8zM265.82-77.07l-63 10.55c-2.75.46-5-1.79-5-5v-38.78c0-3.21 2.25-5.99 5-6.18l63-4.29c2.75-.19 5 1.91 5 4.66v33.2c0 2.75-2.25 5.37-5 5.84zM389.06-202.43h-70.79c-2.75 0-5-2.25-5-5v-37.82c0-2.75 2.25-5 5-5h70.79c2.75 0 5 2.25 5 5v37.82c0 2.75-2.25 5-5 5zM482.03-202.43h-70.79c-2.75 0-5-2.25-5-5v-37.82c0-2.75 2.25-5 5-5h70.79c2.75 0 5 2.25 5 5v37.82c0 2.75-2.25 5-5 5zM575-202.43h-70.79c-2.75 0-5-2.25-5-5v-37.82c0-2.75 2.25-5 5-5H575c2.75 0 5 2.25 5 5v37.82c0 2.75-2.25 5-5 5zM389.06-142.66h-70.79c-2.75 0-5-2.25-5-5v-37.82c0-2.75 2.25-5 5-5h70.79c2.75 0 5 2.25 5 5v37.82c0 2.75-2.25 5-5 5zM482.03-142.66h-70.79c-2.75 0-5-2.25-5-5v-37.82c0-2.75 2.25-5 5-5h70.79c2.75 0 5 2.25 5 5v37.82c0 2.75-2.25 5-5 5zM575-142.66h-70.79c-2.75 0-5-2.25-5-5v-37.82c0-2.75 2.25-5 5-5H575c2.75 0 5 2.25 5 5v37.82c0 2.75-2.25 5-5 5zM613.5-51.43H451.27c-2.75 0-5-2.25-5-5v-37.82c0-2.75 2.25-5 5-5H613.5c2.75 0 5 2.25 5 5v37.82c0 2.75-2.25 5-5 5zM678.5 4.57H451.27c-2.75 0-5-2.25-5-5v-37.82c0-2.75 2.25-5 5-5H678.5c2.75 0 5 2.25 5 5V-.43c0 2.75-2.25 5-5 5zM545.5 60.57h-94.23c-2.75 0-5-2.25-5-5V17.75c0-2.75 2.25-5 5-5h94.23c2.75 0 5 2.25 5 5v37.82c0 2.75-2.25 5-5 5z" class="st0"/>
+                      <g>
+                        <path d="M265.5 155.21L35.27 189.14c-2.75.41-5-2.04-5-5.44V16.08c0-3.4 2.25-6.02 5-5.82L265.5 26.4c2.75.19 5 2.32 5 4.73v118.96c0 2.41-2.25 4.72-5 5.12z" class="st0"/>
+                        <path d="M56 52.08l189 3.74M56 98.74l189-7.26M56 145.4l189-18.26" class="st1"/>
+                        <path d="M82.5 53.19c0 5.43-3.81 9.81-8.5 9.78-4.69-.03-8.5-4.55-8.5-10.1s3.81-9.93 8.5-9.78c4.69.14 8.5 4.66 8.5 10.1zM198.5 93.76c0 4.62-3.81 8.56-8.5 8.8s-8.5-3.4-8.5-8.14 3.81-8.68 8.5-8.8c4.69-.12 8.5 3.52 8.5 8.14zM131.5 138.65c0 5.09-3.81 9.63-8.5 10.15-4.69.52-8.5-3.29-8.5-8.49 0-5.21 3.81-9.75 8.5-10.15s8.5 3.4 8.5 8.49z" class="st2"/>
+                      </g>
+                      <path d="M658.5 236.5H428.27c-2.75 0-5-2.25-5-5V95.75c0-2.75 2.25-5 5-5H658.5c2.75 0 5 2.25 5 5V231.5c0 2.75-2.25 5-5 5z" class="st0"/>
+                      <path d="M449 124.5h189M449 163.5h189M449 202.5h189" class="st1"/>
+                      <circle cx="467" cy="125" r="8.5" class="st2"/>
+                      <circle cx="583" cy="164" r="8.5" class="st2"/>
+                      <circle cx="516" cy="203" r="8.5" class="st2"/>
+                    </svg>
                     <div class="card-body">
                       <h5 class="card-title">Webapp Dashboard</h5>
                       <p class="card-text">Interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming.</p>
@@ -181,13 +235,12 @@
                           <a href="projects/techdegree-project-7/index.html" target="_blank">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Skills</button>
-
+                          <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="collapse" data-target="#collapseProject2" aria-expanded="false" aria-controls="collapseProject2">Details</button>
                         </div>
 
                         <!-- <small class="text-muted">9 mins</small> -->
                       </div>
-                      <div class="collapse" id="collapseExample">
+                      <div class="collapse" id="collapseProject2">
                         <div class="card-body text-left">
                           <div class="row">
                             <div class="col-md-6">
@@ -216,14 +269,32 @@
                       <h5 class="card-title">Game Show App</h5>
                       <p class="card-text">A really cool browser game programmed entirely with JavaScript.</p>
                       <div class="d-flex justify-content-center align-items-center">
-                        <div class="btn-group ">
+                        <div class="btn-group">
                           <a href="projects/techdegree-project-6/index.html" target="_blank">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Skills</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="collapse" data-target="#collapseProject3" aria-expanded="false" aria-controls="collapseProject3">Details</button>
                         </div>
-                        <!-- <small class="text-muted">9 mins</small> -->
                       </div>
+                      <div class="collapse" id="collapseProject3">
+                        <div class="card-body text-left">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p>Skills</p>
+                              <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>JavaScript</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <p>Info</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -235,14 +306,30 @@
                       <h5 class="card-title">Interactive Photo Gallery</h5>
                       <p class="card-text">An example of an interactive and searchable photo gallery built from sratch.</p>
                       <div class="d-flex justify-content-center align-items-center">
-                        <div class="btn-group ">
-                          <a href="projects/techdegree-project-5/index.html" target="_blank">
+                        <div class="btn-group">
+                          <a href="projects/techdegree-project-8/index.html" target="_blank">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Skills</button>
-
+                          <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="collapse" data-target="#collapseProject4" aria-expanded="false" aria-controls="collapseProject4">Details</button>
                         </div>
-                        <!-- <small class="text-muted">9 mins</small> -->
+                      </div>
+                      <div class="collapse" id="collapseProject4">
+                        <div class="card-body text-left">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p>Skills</p>
+                              <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>JavaScript</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <p>Info</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -255,15 +342,32 @@
                       <h5 class="card-title">Style Guide with Sass</h5>
                       <p class="card-text">This is an exmaple of a css style guid set up with sass css.</p>
                       <div class="d-flex justify-content-center align-items-center">
-                        <div class="btn-group ">
-                          <a href="projects/techdegree-project-5/index.html" target="_blank">
+                        <div class="btn-group">
+                          <a href="projects/techdegree-project-8/index.html" target="_blank">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Skills</button>
-
+                          <button type="button" class="btn btn-sm btn-outline-secondar details" data-toggle="collapse" data-target="#collapseProject5" aria-expanded="false" aria-controls="collapseProject5">Details</button>
                         </div>
-                        <!-- <small class="text-muted">9 mins</small> -->
                       </div>
+                      <div class="collapse" id="collapseProject5">
+                        <div class="card-body text-left">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <p>Skills</p>
+                              <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>JavaScript</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <p>Info</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -277,7 +381,7 @@
 
 
 
-      <footer class="mt-auto">
+      <footer class="mt-auto" id="footer">
         <div class="inner">
           <!-- <img class="mx-auto d-block contact-home" src="images/me.png"> -->
           <!-- <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
@@ -297,12 +401,13 @@
                       <li><a href="#" class="text-white">Follow on Twitter</a></li>
                       <li><a href="#" class="text-white">Like on Facebook</a></li>
                       <li><a href="#" class="text-white">Email me</a></li>
+                      <li><a href="https://github.com/alkramas" target="_blank" class="text-white">Github</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="navbar navbar-dark bg-dark" id="navbarNav">
+            <div class="navbar navbar-dark bg-dark" id="navbarNavFooter">
               <div class="container d-flex justify-content-between">
                 <a href="#" class="navbar-brand d-flex align-items-center">
                   <strong>Fabian Kramer</strong>
@@ -320,5 +425,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
