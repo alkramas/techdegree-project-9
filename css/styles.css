@@ -38,19 +38,17 @@ body::after {
   right: 0;
   position: absolute;
 }
-h1, h2, h3, h4, h5, .navbar-brand {
-  /* color: #cececf; */
-  /* color: #2e2e30;
-  font-weight: normal; */
+h1, h2, h3, h4, .navbar-brand {
   font-family: 'Codystar', cursive;
-  /* font-family: 'Beth Ellen', cursive; */
 }
 h4 {
-  /* font-family: 'Noto Serif', serif; */
-  /* font-style: italic; */
   font-size: 1.5em;
 }
-li, p, a {
+h5 {
+  font-weight: bold;
+  opacity: .8;
+}
+li, p {
   font-family: 'Noto Serif', serif;
   /* color: #2e2e30; */
 }
@@ -67,11 +65,11 @@ div.jumbotron {
   padding: 1rem 2rem 2rem 2rem;
 }
 /*******************************
-  footer navbar
+  card
 *******************************/
-/* #navbarHeader {
-  opacity: 0.5;
-} */
+.card-container {
+
+}
 /*******************************
   svg elements
 *******************************/
@@ -139,17 +137,19 @@ div.jumbotron {
 }
 
 
-.graphic-emplydir {
+.project-icon {
   opacity: .4;
   transform: scale(.6);
   transition: 1s all ease-out;
+  max-width: 400px;
+  margin: 0 auto;
   /* animation: compass 2.75s;
   animation-timing-function: ease-out;
   transform-origin: 50% 50%;
   transform: rotate(30deg) scale(.6); */
 }
 
-.graphic-emplydir:hover, .graphic-dashoard:hover {
+.project-icon:hover, .graphic-dashoard:hover {
   opacity: .6;
-  transform: scale(1);
+  transform: scale(.9);
 }

@@ -24,16 +24,11 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+
               <ul class="navbar-nav">
-                <!-- <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Cover <span class="sr-only">(current)</span></a>
-                </li> -->
                 <li class="nav-item">
                   <a class="nav-link active" href="showroom.html">Projects</a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="#">Details</a>
                 </li>
@@ -41,15 +36,9 @@
                   <a class="nav-link" href="#footer" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">Contact</a>
                 </li>
               </ul>
-              <!-- <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form> -->
+
             </div>
-
           </nav>
-
-
 
         </div>
       </header>
@@ -114,40 +103,47 @@
           <div class="container">
             <h1 class="jumbotron-heading">WELCOME</h1>
             <p class="lead">Simply browse through all projects or search according to skills used to create the individual works.</p>
-            <!-- <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
-            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modalFilter">Filter Projects</button>
-            <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+
+            <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#filter" aria-expanded="false" aria-controls="filter">Filter Projects</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">reset filter</button>
+          </div>
+            <!-- collapse filter -->
+            <div class="collapse flex-column p-4" id="filter">
+              <div class="row inner text-left">
+                <div class="col-md-4 ">
+                  <h5>Interactivity</h5>
+                  <div class="form-check text-left">
+                    <input class="form-check-input" type="checkbox" value="" id="js">
+                    <label class="form-check-label" for="js">JavaScript</label>
                   </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                      <div class="form-group">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                      </div>
-                    </form>
+                  <div class="form-check text-left">
+                    <input class="form-check-input" type="checkbox" value="" id="jq">
+                    <label class="form-check-label" for="jq">JQuery</label>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                <div class="col-md-4 text-left">
+                  <h5>Styling</h5>
+                  <div class="form-check text-left">
+                    <input class="form-check-input" type="checkbox" value="" id="css">
+                    <label class="form-check-label" for="css">CSS</label>
+                  </div>
+                  <div class="form-check text-left">
+                    <input class="form-check-input" type="checkbox" value="" id="sass">
+                    <label class="form-check-label" for="sass">SASS</label>
+                  </div>
+                </div>
+                <div class="col-md-4 text-left">
+                  <h5>Structure</h5>
+                  <div class="form-check text-left">
+                    <input class="form-check-input" type="checkbox" value="" id="html">
+                    <label class="form-check-label" for="html">HTML</label>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div>  <!-- end collapse filter -->
+
+          </div>  <!-- end container jumbotron -->
         </div>
 
 
@@ -156,7 +152,7 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4">
                   <div class="card mb-4 shadow-sm bg-transparent">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" class="graphic-emplydir" viewBox="0 0 300 200">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" class="project-icon" viewBox="0 0 300 200">
                       <style>
                         .st0{fill:none;stroke:#343a40;stroke-miterlimit:10}
                       </style>
@@ -172,46 +168,66 @@
                           <a href="projects/techdegree-project-8/index.html" target="_blank">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                           </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="collapse" data-target="#collapseProject1" aria-expanded="false" aria-controls="collapseProject1">Details</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-9">Details</button>
                         </div>
-                      </div>
-                      <div class="collapse flex-column" id="collapseProject1">
-                        <div class="card-body text-left">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <h5>Specific Skills</h5>
-                              <p>JavaScript:</p>
-                              <ul>
-                                <li>Access API using fetch</li>
-                                <li>Display information in cards from template literals</li>
-                                <li>Modal window with jquery plugin with extra infos and custom navigation</li>
-                                <li>Custom Filter functions using data from API with reset of unused filter and search entries</li>
-                                <li>Search functions with message when no results are returned and reset of filters</li>
-                              </ul>
-                              <p>HTML/CSS:</p>
-                              <ul>
-                                <li>Mobile first approach</li>
-                                <li>Flex grid</li>
-                                <li>Hover states</li>
-                              </ul>
-                            </div>
-                            <div class="col-md-6">
-                              <h5>Additional Info</h5>
-                              <p>Project time: <span>20 hours</span></p>
-                              <p>Grade: <span>«exceeds expectations»</span></p>
-                              <p>Reviewer Comments: "Truly one of the sharpest looking API projects I have seen..."</p>
+
+                        <!-- modal project employee directory -->
+                        <div class="modal fade text-left" id="project-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Details Project "Employee Directory"</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <h5>Specific Skills</h5>
+                                    <p class="font-weight-bold">JavaScript:</p>
+                                    <ul>
+                                      <li>Access API using fetch</li>
+                                      <li>Display information in cards from template literals</li>
+                                      <li>Modal window with jquery plugin with extra infos and custom navigation</li>
+                                      <li>Custom Filter functions using data from API with reset of unused filter and search entries</li>
+                                      <li>Search functions with message when no results are returned and reset of filters</li>
+                                    </ul>
+                                    <p class="font-weight-bold">HTML/CSS:</p>
+                                    <ul>
+                                      <li>Mobile first approach</li>
+                                      <li>Flex grid</li>
+                                      <li>Hover states</li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <h5>Additional Info</h5>
+                                    <p>Project time: <span>20 hours</span></p>
+                                    <p>Grade: <span>«exceeds expectations»</span></p>
+                                    <p>Reviewer Comments: "Truly one of the sharpest looking API projects I have seen..."</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <a href="projects/techdegree-project-8/index.html" target="_blank">
+                                  <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                                </a>
+                                <button type="button" class="btn btn-secondary">View project</button>
+                              </div>
                             </div>
                           </div>
                         </div>
+                        <!-- end modal -->
+
                       </div>
                     </div>
-
                   </div>
                 </div>
+
                 <div class="col-md-6 col-lg-4">
                   <div class="card mb-4 shadow-sm bg-transparent">
 
-                      <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 200" class="graphic-emplydir">
+                      <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 200" class="project-icon">
                         <style>
                           .st0,.st1{fill:none;stroke:#343a40;stroke-miterlimit:10}.st1{stroke-width:2;stroke-linecap:round}.st2{fill:#343a40}
                         </style>
@@ -274,37 +290,66 @@
                     <div class="card-body">
                       <h5 class="card-title">Webapp Dashboard</h5>
                       <p class="card-text">Interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming.</p>
-                      <div class="d-flex justify-content-center align-items-center">
-                        <div class="btn-group">
-                          <a href="projects/techdegree-project-7/index.html" target="_blank">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="collapse" data-target="#collapseProject2" aria-expanded="false" aria-controls="collapseProject2">Details</button>
-                        </div>
 
-                        <!-- <small class="text-muted">9 mins</small> -->
+                      <!-- button group -->
+                      <div class="btn-group">
+                        <a href="projects/techdegree-project-7/index.html" target="_blank">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-7">Details</button>
                       </div>
-                      <div class="collapse" id="collapseProject2">
-                        <div class="card-body text-left">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <p>Skills</p>
-                              <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SASS</li>
-                                <li>JavaScript</li>
-                              </ul>
+
+                      <!-- modal project webapp dashboard -->
+                      <div class="modal fade text-left" id="project-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Details Project "Webapp Dashboard"</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
                             </div>
-                            <div class="col-md-6">
-                              <p>Info</p>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <h5>Specific Skills</h5>
+                                  <p class="font-weight-bold">JavaScript:</p>
+                                  <ul>
+                                    <li>Save User input and settings to local storage</li>
+                                    <li>Custom search auto fill functions on section "new members"</li>
+                                  </ul>
+                                  <p class="font-weight-bold">JQuery:</p>
+                                  <ul>
+                                    <li>Use and customize verious jquey plugins for graphs</li>
+                                  </ul>
+                                  <p class="font-weight-bold">HTML/CSS:</p>
+                                  <ul>
+                                    <li>CSS-Grid system with grid-tempalte columns</li>
+                                    <li>Animation of SVG graphics</li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-6">
+                                  <h5>Additional Info</h5>
+                                  <p>Project time: <span>20 hours</span></p>
+                                  <p>Grade: <span>«exceeds expectations»</span></p>
+                                  <p>Reviewer Comments: "Phenomenal job on this complex project! You have shown a solid understanding of JavaScript, jQuery, localStorage, and using 3rd party plugins! "</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                              <a href="projects/techdegree-project-7/index.html" target="_blank">
+                                <button type="button" class="btn btn-secondary">View project</button>
+                              </a>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      </div> <!-- end modal -->
+
+                    </div> <!-- end card body -->
+                  </div> <!-- end card -->
+                </div> <!-- end col element -->
+
                 <div class="col-md-6 col-lg-4">
                   <div class="card mb-4 shadow-sm bg-transparent">
                     <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
@@ -312,40 +357,70 @@
                     <div class="card-body">
                       <h5 class="card-title">Game Show App</h5>
                       <p class="card-text">A really cool browser game programmed entirely with JavaScript.</p>
-                      <div class="d-flex justify-content-center align-items-center">
-                        <div class="btn-group">
-                          <a href="projects/techdegree-project-6/index.html" target="_blank">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="collapse" data-target="#collapseProject3" aria-expanded="false" aria-controls="collapseProject3">Details</button>
-                        </div>
+
+                      <!-- button group -->
+                      <div class="btn-group">
+                        <a href="projects/techdegree-project-6/index.html" target="_blank">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-6">Details</button>
                       </div>
-                      <div class="collapse" id="collapseProject3">
-                        <div class="card-body text-left">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <p>Skills</p>
-                              <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SASS</li>
-                                <li>JavaScript</li>
-                              </ul>
+
+                      <!-- modal project webapp dashboard -->
+                      <div class="modal fade text-left" id="project-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Details Project "Game Show App"</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
                             </div>
-                            <div class="col-md-6">
-                              <p>Info</p>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <h5>Specific Skills</h5>
+                                  <p class="font-weight-bold">Custom game mechanics with JavaScript:</p>
+                                  <ul>
+                                    <li>Create arry of phrases with each iteration of complete game</li>
+                                    <li>Get random phrase for game</li>
+                                    <li>Check each letter being guessed</li>
+                                    <li>handle right and wrong guesses</li>
+                                    <li>check if game is won or lost</li>
+                                    <li>Return winning screen or option to restart the game</li>
+                                  </ul>
+                                  <p class="font-weight-bold">CSS:</p>
+                                  <ul>
+                                    <li>Use and customize verious jquey plugins for graphs</li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-6">
+                                  <h5>Additional Info</h5>
+                                  <p>Project time: <span>12 hours</span></p>
+                                  <p>Grade: <span>«exceeds expectations»</span></p>
+                                  <p>Reviewer Comments: "Awesome! I really love the additional effects you added!"</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" href="" class="btn btn-light" data-dismiss="modal">Close</button>
+                              <a href="projects/techdegree-project-6/index.html" target="_blank">
+                                <button type="button" class="btn btn-secondary">View project</button>
+                              </a>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> <!-- end modal -->
 
-                    </div>
-                  </div>
-                </div>
+                    </div> <!-- end card body -->
+                  </div> <!-- end card -->
+                </div> <!-- end col element -->
+
+
                 <div class="col-md-6 col-lg-4">
                   <div class="card mb-4 shadow-sm bg-transparent">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 200" class="graphic-emplydir">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 200" class="project-icon">
                       <style>
                         .st0,.st1{fill:none;stroke:#343a40;stroke-miterlimit:10}.st1{stroke-width:2;stroke-linecap:round}.st2{fill:#343a40}
                       </style>
@@ -418,39 +493,71 @@
                     <div class="card-body">
                       <h5 class="card-title">Interactive Photo Gallery</h5>
                       <p class="card-text">An example of an interactive and searchable photo gallery built from sratch.</p>
-                      <div class="d-flex justify-content-center align-items-center">
-                        <div class="btn-group">
-                          <a href="projects/techdegree-project-5/index.html" target="_blank">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="collapse" data-target="#collapseProject4" aria-expanded="false" aria-controls="collapseProject4">Details</button>
-                        </div>
+
+                      <!-- button group -->
+                      <div class="btn-group">
+                        <a href="projects/techdegree-project-5/index.html" target="_blank">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-5">Details</button>
                       </div>
-                      <div class="collapse" id="collapseProject4">
-                        <div class="card-body text-left">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <p>Skills</p>
-                              <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SASS</li>
-                                <li>JavaScript</li>
-                              </ul>
+
+                      <!-- modal project photo gallery -->
+                      <div class="modal fade text-left" id="project-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Details Project "Interactive Photo Gallery"</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
                             </div>
-                            <div class="col-md-6">
-                              <p>Info</p>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <h5>Specific Skills</h5>
+                                  <p class="font-weight-bold">JavaScript:</p>
+                                  <ul>
+                                    <li>Custom search function to filter images comparing search with alt-text</li>
+                                  </ul>
+                                  <p class="font-weight-bold">JQuery:</p>
+                                  <ul>
+                                    <li>Use and customize lightbox plugin</li>
+                                  </ul>
+                                  <p class="font-weight-bold">CSS</p>
+                                  <ul>
+                                    <li>Compilation of SASS-files</li>
+                                    <li>Grid stystem with css flex</li>
+                                    <li>Mobile first styling approach</li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-6">
+                                  <h5>Additional Info</h5>
+                                  <p>Project time: <span>10 hours</span></p>
+                                  <p>Grade: <span>«exceeds expectations»</span></p>
+                                  <p>Reviewer Comments: "Wonderful and amazing job, congratulations! I love the smoothness of the adaption to smaller screensizes and your search function is just brilliant and exceptional!"</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" href="" class="btn btn-light" data-dismiss="modal">Close</button>
+                              <a href="projects/techdegree-project-5/index.html" target="_blank">
+                                <button type="button" class="btn btn-secondary">View project</button>
+                              </a>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      </div> <!-- end modal -->
+
+                    </div> <!-- end card body -->
+                  </div> <!-- end card -->
+                </div> <!-- end col element -->
+
+
                 <div class="col-md-6 col-lg-4">
                   <div class="card mb-4 shadow-sm bg-transparent">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 200"  class="graphic-emplydir">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 200"  class="project-icon">
                       <style>
                         .st0,.st1{fill:none;stroke:#343a40;stroke-miterlimit:10}.st1{stroke-width:2;stroke-linecap:round}.st2{fill:#343a40}
                       </style>
@@ -530,42 +637,63 @@
                     <div class="card-body">
                       <h5 class="card-title">Style Guide with Sass</h5>
                       <p class="card-text">This is an exmaple of a css style guid set up with sass css.</p>
-                      <div class="d-flex justify-content-center align-items-center">
-                        <div class="btn-group">
-                          <a href="projects/techdegree-project-8/index.html" target="_blank">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          </a>
-                          <button type="button" class="btn btn-sm btn-outline-secondar details" data-toggle="collapse" data-target="#collapseProject5" aria-expanded="false" aria-controls="collapseProject5">Details</button>
-                        </div>
+
+                      <!-- button group -->
+                      <div class="btn-group">
+                        <a href="projects/techdegree-project-4/index.html" target="_blank">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                        <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-4">Details</button>
                       </div>
-                      <div class="collapse" id="collapseProject5">
-                        <div class="card-body text-left">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <p>Skills</p>
-                              <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SASS</li>
-                                <li>JavaScript</li>
-                              </ul>
+
+                      <!-- modal project photo gallery -->
+                      <div class="modal fade text-left" id="project-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Details Project "Style Guide"</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
                             </div>
-                            <div class="col-md-6">
-                              <p>Info</p>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <h5>Specific Skills</h5>
+
+                                  <p class="font-weight-bold">CSS:</p>
+                                  <ul>
+                                    <li>Extensive work with SASS</li>
+                                    <li>File compilation with scss directories</li>
+                                    <li>Variables for fonts, breakpoints and colors</li>
+                                    <li>SCSS Mixins</li>
+                                    <li>SCSS Maps</li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-6">
+                                  <h5>Additional Info</h5>
+                                  <p>Project time: <span>12 hours</span></p>
+                                  <p>Grade: <span>«exceeds expectations»</span></p>
+                                  <p>Reviewer Comments: "Fantastic work getting this project together, it can be a bit challenging but you've shown some serious chops getting it all together!!"</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" href="" class="btn btn-light" data-dismiss="modal">Close</button>
+                              <a href="projects/techdegree-project-4/index.html" target="_blank">
+                                <button type="button" class="btn btn-secondary">View project</button>
+                              </a>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> <!-- end modal -->
 
-                    </div>
-                  </div>
-                </div>
+                    </div> <!-- end card body -->
+                  </div> <!-- end card -->
+                </div> <!-- end col element -->
 
-              </div>
-          </div>
-
-
-
+              </div> <!-- end row cards -->
+          </div> <!-- end card container -->
       </main>
 
 
