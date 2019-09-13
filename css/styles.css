@@ -47,6 +47,7 @@ h4 {
 h5 {
   font-weight: bold;
   opacity: .8;
+  font-family: 'Codystar', cursive;
 }
 li, p {
   font-family: 'Noto Serif', serif;
@@ -67,9 +68,13 @@ div.jumbotron {
 /*******************************
   card
 *******************************/
-.card-container {
+.modal-dialog {
 
 }
+.modal-content {
+
+}
+
 /*******************************
   svg elements
 *******************************/
@@ -116,40 +121,38 @@ div.jumbotron {
 }
 
 @keyframes outerring {
-  10% {
-    transform: rotate(120deg);
+  40% {
+    transform: rotate(400deg);
   }
-  50% {
-    transform: rotate(-20deg);
-  }
-  70% {
-    transform: rotate(20deg);
+  80% {
+    transform: rotate(357deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 .outer-ring  {
   animation: outerring 3.25s;
   animation-timing-function: ease-out;
   transform-origin: 50% 50%;
-  transform: rotate(0deg) scale(1);
 }
 
+.project-icon:hover .p-icon-ring  {
+  animation: outerring 2s;
+  animation-timing-function: ease-out;
+  transform-origin: 50% 50%;
+}
 
 .project-icon {
   opacity: .4;
-  transform: scale(.6);
+  transform: scale(.8);
   transition: 1s all ease-out;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
-  /* animation: compass 2.75s;
-  animation-timing-function: ease-out;
-  transform-origin: 50% 50%;
-  transform: rotate(30deg) scale(.6); */
 }
 
 .project-icon:hover, .graphic-dashoard:hover {
   opacity: .6;
-  transform: scale(.9);
+  transform: scale(1);
+
 }
