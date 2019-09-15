@@ -33,7 +33,7 @@
                   <a class="nav-link" href="#">Details</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#footer" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">Contact</a>
+                  <a class="nav-link" href="#footer">Contact</a>
                 </li>
               </ul>
 
@@ -49,7 +49,7 @@
         <div class="jumbotron jumbotron-fluid text-center">
           <div class="container svg-compass">
 
-            <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 500 500">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
               <style>
                 .st0{fill:#4c3f35}.st1,.st4{fill:none;stroke:#4c3f35;stroke-width:5;stroke-miterlimit:10}.st4{stroke-width:2;stroke-linecap:round;stroke-miterlimit:1;stroke-dasharray:4}.st5{fill:#fff}.st7{fill:none}.st8{fill:#343a40}
               </style>
@@ -98,9 +98,9 @@
           <div class="container">
             <h1 class="jumbotron-heading">WELCOME ON BOARD</h1>
             <p class="lead">Browse through my projects or search according to skills used to create the individual works.</p>
-
+            <hr>
             <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#filter" aria-expanded="false" aria-controls="filter">Filter Projects</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="set-filters" data-toggle="collapse" data-target="#filter" aria-expanded="false" aria-controls="filter">Filter Projects</button>
             <button type="button" class="btn btn-sm btn-outline-secondary" id="reset-filters">reset filter</button>
           </div>
             <!-- collapse filter -->
@@ -109,35 +109,36 @@
                 <div class="col-md-4 ">
                   <h5>Interactivity</h5>
                   <div class="form-check text-left">
-                    <input class="form-check-input" type="checkbox" value="" id="js">
+                    <input class="form-check-input" type="checkbox" value="JavaScript" id="js">
                     <label class="form-check-label" for="js">JavaScript</label>
                   </div>
                   <div class="form-check text-left">
-                    <input class="form-check-input" type="checkbox" value="" id="jq">
+                    <input class="form-check-input" type="checkbox" value="JQuery" id="jq">
                     <label class="form-check-label" for="jq">JQuery</label>
                   </div>
                 </div>
                 <div class="col-md-4 text-left">
                   <h5>Styling</h5>
                   <div class="form-check text-left">
-                    <input class="form-check-input" type="checkbox" value="" id="css">
+                    <input class="form-check-input" type="checkbox" value="CSS" id="css">
                     <label class="form-check-label" for="css">CSS</label>
                   </div>
                   <div class="form-check text-left">
-                    <input class="form-check-input" type="checkbox" value="" id="sass">
+                    <input class="form-check-input" type="checkbox" value="SASS" id="sass">
                     <label class="form-check-label" for="sass">SASS</label>
                   </div>
                 </div>
                 <div class="col-md-4 text-left">
                   <h5>Structure</h5>
                   <div class="form-check text-left">
-                    <input class="form-check-input" type="checkbox" value="" id="html">
+                    <input class="form-check-input" type="checkbox" value="HTML" id="html">
                     <label class="form-check-label" for="html">HTML</label>
                   </div>
                 </div>
               </div>
-            </div>  <!-- end collapse filter -->
 
+            </div>  <!-- end collapse filter -->
+            <hr>
           </div>  <!-- end container jumbotron -->
         </div>
 
@@ -145,9 +146,9 @@
             <div class="container overflow-auto text-center">
 
               <div class="row">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 d-flex">
                   <div class="card mb-4 shadow-sm bg-transparent">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 210 210" class="project-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210" class="project-icon">
                       <style>
                         .st0{fill:none;stroke:#343a40;stroke-width:5;stroke-miterlimit:10}.st2{fill:#343a40}
                       </style>
@@ -166,14 +167,13 @@
                       </g>
                     </svg>
 
-                    <div class="card-body d-flex">
-                      <div class="flex-column justify-content-center align-items-center">
+                    <div class="card-body">
                         <h5 class="card-title">Employee Directory</h5>
                         <p class="card-text">Requesting data of random employees from an API and displaying their Information. The Navigation, Search and Filtering utilities were built custom with Javascript.</p>
 
                         <div class="btn-group">
-                          <a href="projects/techdegree-project-8/index.html" target="_blank">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <a href="projects/projecteight/index.html" target="_blank">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" id="b-view-eight">View</button>
                           </a>
                           <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-9">Details</button>
                         </div>
@@ -192,7 +192,7 @@
                                 <div class="row">
                                   <div class="col-md-6">
                                     <h6>Specific Skills</h6>
-                                    <p class="font-weight-bold">JavaScript:</p>
+                                    <p class="font-weight-bold skill">JavaScript</p>
                                     <ul>
                                       <li>Access API using fetch</li>
                                       <li>Display information in cards from template literals</li>
@@ -200,7 +200,7 @@
                                       <li>Custom Filter functions using data from API with reset of unused filter and search entries</li>
                                       <li>Search functions with message when no results are returned and reset of filters</li>
                                     </ul>
-                                    <p class="font-weight-bold">HTML/CSS:</p>
+                                    <p class="font-weight-bold skill">CSS</p>
                                     <ul>
                                       <li>Mobile first approach</li>
                                       <li>Flex grid</li>
@@ -217,8 +217,8 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                                <a href="projects/techdegree-project-8/index.html" target="_blank">
-                                  <button type="button" class="btn btn-secondary">View project</button>
+                                <a href="projects/projecteight/index.html" target="_blank">
+                                  <button type="button" class="btn btn-secondary"  id="b-view-project-eight">View project</button>
                                 </a>
                               </div>
                             </div>
@@ -226,15 +226,14 @@
                         </div>
                         <!-- end modal -->
 
-                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 d-flex">
                   <div class="card mb-4 shadow-sm bg-transparent">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 300" class="project-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="project-icon">
                       <style>
                         .st0{fill:none;stroke:#343a40;stroke-width:5;stroke-miterlimit:10}.st2{fill:#343a40}
                       </style>
@@ -261,8 +260,8 @@
 
                       <!-- button group -->
                       <div class="btn-group">
-                        <a href="projects/techdegree-project-7/index.html" target="_blank">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <a href="projects/projectseven/index.html" target="_blank">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"  id="b-view-seven">View</button>
                         </a>
                         <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-7">Details</button>
                       </div>
@@ -281,16 +280,16 @@
                               <div class="row">
                                 <div class="col-md-6">
                                   <h6>Specific Skills</h6>
-                                  <p class="font-weight-bold">JavaScript:</p>
+                                  <p class="font-weight-bold skill">JavaScript</p>
                                   <ul>
                                     <li>Save User input and settings to local storage</li>
                                     <li>Custom search auto fill functions on section "new members"</li>
                                   </ul>
-                                  <p class="font-weight-bold">JQuery:</p>
+                                  <p class="font-weight-bold skill">JQuery</p>
                                   <ul>
                                     <li>Use and customize verious jquey plugins for graphs</li>
                                   </ul>
-                                  <p class="font-weight-bold">HTML/CSS:</p>
+                                  <p class="font-weight-bold">CSS</p>
                                   <ul>
                                     <li>CSS-Grid system with grid-tempalte columns</li>
                                     <li>Animation of SVG graphics</li>
@@ -306,8 +305,8 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                              <a href="projects/techdegree-project-7/index.html" target="_blank">
-                                <button type="button" class="btn btn-secondary">View project</button>
+                              <a href="projects/projectseven/index.html" target="_blank">
+                                <button type="button" class="btn btn-secondary"  id="b-view-project-seven">View project</button>
                               </a>
                             </div>
                           </div>
@@ -318,9 +317,9 @@
                   </div> <!-- end card -->
                 </div> <!-- end col element -->
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 d-flex">
                   <div class="card mb-4 shadow-sm bg-transparent">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 300" class="project-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="project-icon">
                       <style>
                         .st2{fill:#343a40}.st4{fill:none;stroke:#343a40;stroke-miterlimit:10}
                       </style>
@@ -348,8 +347,8 @@
 
                       <!-- button group -->
                       <div class="btn-group">
-                        <a href="projects/techdegree-project-6/index.html" target="_blank">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <a href="projects/projectsix/index.html" target="_blank">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"  id="b-view-six">View</button>
                         </a>
                         <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-6">Details</button>
                       </div>
@@ -368,7 +367,7 @@
                               <div class="row">
                                 <div class="col-md-6">
                                   <h6>Specific Skills</h6>
-                                  <p class="font-weight-bold">Custom game mechanics with JavaScript:</p>
+                                  <p class="font-weight-bold skill">JavaScript</p>
                                   <ul>
                                     <li>Create arry of phrases with each iteration of complete game</li>
                                     <li>Get random phrase for game</li>
@@ -377,7 +376,7 @@
                                     <li>check if game is won or lost</li>
                                     <li>Return winning screen or option to restart the game</li>
                                   </ul>
-                                  <p class="font-weight-bold">CSS:</p>
+                                  <p class="font-weight-bold skill">CSS</p>
                                   <ul>
                                     <li>Use and customize verious jquey plugins for graphs</li>
                                   </ul>
@@ -392,8 +391,8 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" href="" class="btn btn-light" data-dismiss="modal">Close</button>
-                              <a href="projects/techdegree-project-6/index.html" target="_blank">
-                                <button type="button" class="btn btn-secondary">View project</button>
+                              <a href="projects/projectsix/index.html" target="_blank">
+                                <button type="button" class="btn btn-secondary"  id="b-view-project-six">View project</button>
                               </a>
                             </div>
                           </div>
@@ -405,10 +404,10 @@
                 </div> <!-- end col element -->
 
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 d-flex">
                   <div class="card mb-4 shadow-sm bg-transparent">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 300 300" class="project-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="project-icon">
                       <style>
                         .st0{fill:none;stroke:#343a40;stroke-width:5;stroke-miterlimit:10}.st2{fill:#343a40}.st4{fill:none;stroke:#343a40;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10}
                       </style>
@@ -432,8 +431,8 @@
 
                       <!-- button group -->
                       <div class="btn-group">
-                        <a href="projects/techdegree-project-5/index.html" target="_blank">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <a href="projects/projectfive/index.html" target="_blank">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" id="b-view-five">View</button>
                         </a>
                         <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-5">Details</button>
                       </div>
@@ -452,15 +451,15 @@
                               <div class="row">
                                 <div class="col-md-6">
                                   <h6>Specific Skills</h6>
-                                  <p class="font-weight-bold">JavaScript:</p>
+                                  <p class="font-weight-bold skill">JavaScript</p>
                                   <ul>
                                     <li>Custom search function to filter images comparing search with alt-text</li>
                                   </ul>
-                                  <p class="font-weight-bold">JQuery:</p>
+                                  <p class="font-weight-bold skill">JQuery</p>
                                   <ul>
                                     <li>Use and customize lightbox plugin</li>
                                   </ul>
-                                  <p class="font-weight-bold">CSS</p>
+                                  <p class="font-weight-bold skill">CSS</p>
                                   <ul>
                                     <li>Compilation of SASS-files</li>
                                     <li>Grid stystem with css flex</li>
@@ -477,8 +476,8 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" href="" class="btn btn-light" data-dismiss="modal">Close</button>
-                              <a href="projects/techdegree-project-5/index.html" target="_blank">
-                                <button type="button" class="btn btn-secondary">View project</button>
+                              <a href="projects/projectfive/index.html" target="_blank">
+                                <button type="button" class="btn btn-secondary"  id="b-view-project-five">View project</button>
                               </a>
                             </div>
                           </div>
@@ -490,10 +489,10 @@
                 </div> <!-- end col element -->
 
 
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 d-flex">
                   <div class="card mb-4 shadow-sm bg-transparent">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" viewBox="0 0 210 210" class="project-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210" class="project-icon">
                       <style>
                         .st0{fill:none;stroke:#343a40;stroke-width:5;stroke-miterlimit:10}.st2{fill:#343a40}
                       </style>
@@ -517,7 +516,7 @@
 
                       <!-- button group -->
                       <div class="btn-group">
-                        <a href="projects/techdegree-project-4/index.html" target="_blank">
+                        <a href="projects/projectfour/index.html" target="_blank">
                           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                         </a>
                         <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-4">Details</button>
@@ -538,7 +537,7 @@
                                 <div class="col-md-6">
                                   <h6>Specific Skills</h6>
 
-                                  <p class="font-weight-bold">CSS:</p>
+                                  <p class="font-weight-bold skill">SASS</p>
                                   <ul>
                                     <li>Extensive work with SASS</li>
                                     <li>File compilation with scss directories</li>
@@ -546,6 +545,7 @@
                                     <li>SCSS Mixins</li>
                                     <li>Maps</li>
                                   </ul>
+
                                 </div>
                                 <div class="col-md-6">
                                   <h6>Additional Info</h6>
@@ -557,7 +557,7 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" href="" class="btn btn-light" data-dismiss="modal">Close</button>
-                              <a href="projects/techdegree-project-4/index.html" target="_blank">
+                              <a href="projects/projectfour/index.html" target="_blank">
                                 <button type="button" class="btn btn-secondary">View project</button>
                               </a>
                             </div>
@@ -606,7 +606,7 @@
                 <a href="#" class="navbar-brand d-flex align-items-center">
                   <strong>Fabian Kramer</strong>
                 </a>
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation" id="toggle-contact">
                   <img class="mx-auto contact-home" src="images/me.png">
                 </button>
               </div>
