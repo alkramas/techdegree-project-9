@@ -30,9 +30,6 @@
                   <a class="nav-link active" href="showroom.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Details</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#footer">Contact</a>
                 </li>
               </ul>
@@ -100,14 +97,14 @@
             <p class="lead">Browse through my projects or search according to skills used to create the individual works.</p>
             <hr>
             <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-secondary" id="set-filters" data-toggle="collapse" data-target="#filter" aria-expanded="false" aria-controls="filter">Filter Projects</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="set-filters" data-toggle="collapse" data-target="#filter" aria-expanded="false" aria-controls="filter">filter projects</button>
             <button type="button" class="btn btn-sm btn-outline-secondary" id="reset-filters">reset filter</button>
           </div>
             <!-- collapse filter -->
             <div class="collapse flex-column p-4" id="filter">
               <div class="row inner text-left">
                 <div class="col-md-4 ">
-                  <h5>Interactivity</h5>
+                  <h5 class="filter">Interactivity</h5>
                   <div class="form-check text-left">
                     <input class="form-check-input" type="checkbox" value="JavaScript" id="js">
                     <label class="form-check-label" for="js">JavaScript</label>
@@ -118,7 +115,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 text-left">
-                  <h5>Styling</h5>
+                  <h5 class="filter">Styling</h5>
                   <div class="form-check text-left">
                     <input class="form-check-input" type="checkbox" value="CSS" id="css">
                     <label class="form-check-label" for="css">CSS</label>
@@ -129,7 +126,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 text-left">
-                  <h5>Structure</h5>
+                  <h5 class="filter">Structure</h5>
                   <div class="form-check text-left">
                     <input class="form-check-input" type="checkbox" value="HTML" id="html">
                     <label class="form-check-label" for="html">HTML</label>
@@ -205,6 +202,11 @@
                                       <li>Mobile first approach</li>
                                       <li>Flex grid</li>
                                       <li>Hover states</li>
+                                    </ul>
+                                    <p class="font-weight-bold skill">HTML</p>
+                                    <ul>
+                                      <li>Layout of all elements</li>
+                                      <li>Form HTML from JSONData</li>
                                     </ul>
                                   </div>
                                   <div class="col-md-6">
@@ -293,6 +295,10 @@
                                   <ul>
                                     <li>CSS-Grid system with grid-tempalte columns</li>
                                     <li>Animation of SVG graphics</li>
+                                  </ul>
+                                  <p class="font-weight-bold skill">HTML</p>
+                                  <ul>
+                                    <li>Layout of all elements</li>
                                   </ul>
                                 </div>
                                 <div class="col-md-6">
@@ -477,7 +483,7 @@
                             <div class="modal-footer">
                               <button type="button" href="" class="btn btn-light" data-dismiss="modal">Close</button>
                               <a href="projects/projectfive/index.html" target="_blank">
-                                <button type="button" class="btn btn-secondary"  id="b-view-project-five">View project</button>
+                                <button type="button" class="btn btn-secondary" id="b-view-project-five">View project</button>
                               </a>
                             </div>
                           </div>
@@ -517,7 +523,7 @@
                       <!-- button group -->
                       <div class="btn-group">
                         <a href="projects/projectfour/index.html" target="_blank">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" id="b-view-four">View</button>
                         </a>
                         <button type="button" class="btn btn-sm btn-outline-secondary details" data-toggle="modal" data-target="#project-4">Details</button>
                       </div>
@@ -558,7 +564,7 @@
                             <div class="modal-footer">
                               <button type="button" href="" class="btn btn-light" data-dismiss="modal">Close</button>
                               <a href="projects/projectfour/index.html" target="_blank">
-                                <button type="button" class="btn btn-secondary">View project</button>
+                                <button type="button" class="btn btn-secondary" id="b-view-project-four">View project</button>
                               </a>
                             </div>
                           </div>
@@ -618,7 +624,7 @@
                   <strong>Fabian Kramer</strong>
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation" id="toggle-contact">
-                  <img class="mx-auto contact-home" src="images/me.png">
+                  <img class="mx-auto contact-home" src="images/me.png" alt="contact info">
                 </button>
               </div>
             </div>
