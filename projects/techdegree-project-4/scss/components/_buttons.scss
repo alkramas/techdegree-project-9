@@ -1,0 +1,26 @@
+// **********************************************
+// _buttons.scss
+// styles related to the button elements
+// **********************************************
+
+//.theme__colors {
+//  @include buttonbasic($default-color);
+//}
+
+.btn {
+  &--default {
+    @include buttonbasic($default-color);
+  }
+  &--success {
+    @include buttonbasic($success-color);
+  }
+  &--error {
+    @include buttonbasic($error-color);
+  }
+  &--warning {
+    @include buttonbasic($warning-color);
+  }
+  &--info {
+    @include buttonbasic($info-color);
+  }
+}

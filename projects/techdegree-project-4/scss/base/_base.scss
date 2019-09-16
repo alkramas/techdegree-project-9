@@ -1,0 +1,17 @@
+// **********************************************
+// base.scss
+// styles related to base elements
+// **********************************************
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,11 @@
+// **************************************
+// utilities/_index.scss
+// used to import sass variables
+// used to import sass mixins
+// used to import placeholder styles
+// **************************************
+
+// import the utilities styles
+@import 'variables',
+        'mixins',
+        'placeholders';

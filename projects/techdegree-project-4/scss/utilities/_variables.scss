@@ -1,0 +1,53 @@
+// **********************************************
+// _variables.scss
+// **********************************************
+
+
+//fonts
+$font-stack-primary: 'Aleo', serif;
+
+//colors
+$white: #fff;
+$default-text-color: #9a9999; // grey
+$darker-default-text-color: darken($default-text-color, 15%);
+$primary-color: #58E1C1; //turqoise
+$primary-color-lighter: lighten($primary-color, 25%); //lighter turqoise
+$default-color: #51DDFC; //light blue
+$default-color-lighter: lighten($default-color, 15%); //lighter light blue
+$default-color-darker: desaturate($default-color, 20%); //darker blue
+$success-color: #63CC81; //green
+$success-color-lighter: lighten($success-color, 10%); //lighter green
+$error-color: #E4757A; //soil red
+$error-color-lighter: lighten($error-color, 10%); //lighter soil red
+$warning-color: #FD7856; //orange
+$warning-color-lighter: lighten($warning-color, 10%); // lighter orange
+$info-color: #927BC1; //pruple
+$info-color-lighter: lighten($info-color, 20%); //lighter pruple
+$info-color-lighter-sat: saturate($info-color-lighter, 25%); //lighter more saturated pruple
+$info-color-lighter-sat-hue: adjust-hue($info-color-lighter-sat, 20%); //lighter more saturated, brighter pruple
+
+//padding
+$button-padding: 1em 10px 1em;
+
+//Buttons
+$button-bordradius: 5px;
+
+//text layout
+$default-lineheight: 1.6;
+
+//breakpoints
+$break-medium: 768px;
+
+//align-items
+$center: 0 auto;
+
+//theme theme__colors
+$themes: (
+  '3': $info-color-lighter-sat-hue,
+  '4': $default-color-lighter,
+  '5': $success-color-lighter,
+  '6': $default-color-darker,
+  '7': $error-color-lighter,
+  '8': $warning-color-lighter,
+  '12': $primary-color,
+);

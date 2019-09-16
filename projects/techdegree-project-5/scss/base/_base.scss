@@ -1,0 +1,58 @@
+// **********************************************
+// base.scss
+// styles related to base elements
+// **********************************************
+
+@import url("https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i");
+
+* {
+  box-sizing: border-box;
+}
+
+/*preliminary plain css*/
+.container {
+  // display: flex;
+  // justify-content: center;
+  // flex-wrap: wrap;
+  // flex-direction: column;
+  /*spacing*/
+  margin: 2em;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+}
+
+
+
+
+img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+}
+
+.search-box {
+  margin: 1em 0;
+  width: 40%;
+  min-width: 200px;
+}
+
+.image-item {
+  align-self: center;
+  // flex-basis: 200px;
+  height: 200px;
+  min-height: 200px;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.image-item {
+  /*gutter*/
+  margin: 1em;
+}

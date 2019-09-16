@@ -1,0 +1,71 @@
+// **********************************************
+// _mixins.scss
+// **********************************************
+
+//for use within mixins
+@mixin bg-rd {
+  padding: $button-padding;
+  border-radius: $button-bordradius;
+}
+
+//base elements
+@mixin imagecenter {
+  display: block;
+  margin: 2em auto 2em auto;
+}
+
+//flex default
+@mixin flex($flex: null, $fldir: null, $alitms: null, $jtfycnt: null, $flxb: null, $wd: null, $ht: null) {
+  display: $flex;
+  flex-direction: $fldir;
+  align-items: $alitms;
+  justify-content: $jtfycnt;
+  flex-basis: $flxb;
+  width: $wd;
+  height: $ht;
+}
+
+//aligns
+@mixin center-align($wd: null) {
+  margin: 0 auto;
+  width: $wd;
+}
+
+//buttons
+@mixin buttonstyles {
+  color: $white;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0.75em 0;
+  letter-spacing: 0.25em;
+}
+
+@mixin buttonbasic($bgcolor: null) {
+  background-color: $bgcolor;
+  @include bg-rd;
+  @include buttonstyles;
+}
+
+//grid elements
+@mixin gridelement($bgcolor: null) {
+  background-color: $bgcolor;
+  @include bg-rd;
+  color: $darker-default-text-color;
+}
+
+//media queries, flexbox settings
+@mixin mquery ($break: null, $dir: null, $jtfycnt: null, $flxb: null, $alitms: null, $mgt: null, $mgl: null, $wd: null, $ht: null) {
+  @media (min-width: $break) {
+    flex-direction: $dir;
+    justify-content: $jtfycnt;
+    flex-basis: $flxb;
+    align-items: $alitms;
+    margin-top: $mgt;
+    margin-left: $mgl;
+    width: $wd;
+    height: $ht;
+  }
+}
+
+// calculate iteration of image-container according to break points

@@ -1,0 +1,17 @@
+// **********************************************
+// _images.scss
+// styles related to the image elements
+// **********************************************
+
+.img--avatar {
+  @extend %img;
+}
+
+.img--frame {
+  width: 100%;
+  padding: 1em;
+  border: $default-text-color solid 1px;
+}
+.img--logo {
+  margin: 0.5em auto 0.5em auto;
+}

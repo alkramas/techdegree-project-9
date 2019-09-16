@@ -1,0 +1,29 @@
+// **********************************************
+// _navigation.scss
+// styles related to the nav elements
+// **********************************************
+
+.nav {
+  @include flex($fldir: column, $alitms: center);
+  @include md-medium ($dir: row, $jtfycnt: flex-end);
+  &__item {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    padding: $button-padding;
+    @include md-medium ($wd: auto);
+    &:hover {
+      @extend %navhover;
+      @include bg-rd;
+    }
+    &:hover a {
+      @extend %navhover;
+    }
+    & a {
+      @extend %navcolor;
+    }
+  }
+}

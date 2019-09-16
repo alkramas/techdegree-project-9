@@ -1,0 +1,26 @@
+// **********************************************
+// _grid.scss
+// styles related to the grid system and
+// main container.
+// major grid styles have been added here for you
+// but additional styling may be needed
+// **********************************************
+
+
+/* grid base class*/
+
+  .grid__row {
+    @include flex($fldir: row, $alitms: center, $flxb: 200px);
+    .image-item {
+      @include flex($jtfycnt: space-around, $wd: 200px, $ht: 200px);
+    }
+  }
+
+
+
+// .grid__row {
+//   @include mquery ($break: $break-large, $dir: row, $flxb: 200px, $alitms: center);
+//   .image-item {
+//     @include flex($jtfycnt: space-around, $wd: 200px);
+//   }
+// }

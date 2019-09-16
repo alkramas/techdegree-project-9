@@ -1,0 +1,12 @@
+// **********************************************
+// _typography.scss
+// styles related to the typo and fonts
+// **********************************************
+
+@import url('https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i');
+
+/*body*/
+.container {
+  font-family: $font-stack-primary;
+  line-height: $default-lineheight;
+}

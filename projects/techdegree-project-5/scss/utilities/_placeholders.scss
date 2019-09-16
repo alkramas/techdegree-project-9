@@ -1,0 +1,23 @@
+// **********************************************
+// _placeholders.scss
+// **********************************************
+
+
+//links
+%linkcolor {
+  color: $default-color;
+}
+
+//navigation
+%navcolor {
+  color: $default-text-color;
+}
+%navhover {
+  background-color: $primary-color;
+  color: $white;
+}
+
+//images
+%img {
+  @include imagecenter;
+}
