@@ -55,50 +55,6 @@ function filterBySkills() {
       }
 }
 
-// filter projects by Skills
-// function filterBySkills() {
-//     // check which skills are checked in filters
-//     // let checkedSkills = '';
-//     let checkedSkills = [];
-//     for (i = 0; i < inputElements.length; i += 1) {
-//       let thisElement = inputElements[i];
-//       if (thisElement.checked === true) {
-//         // checkedSkills += thisElement.value.toLowerCase();
-//         checkedSkills.push(thisElement.value.toLowerCase());
-//         // console.log('checkedSkills is: ' + checkedSkills);
-//       }
-//     }
-//
-//     for (ii = 0; ii < modalsBodies.length; ii += 1) {
-//         let thisModalBody = modalsBodies[ii];
-//         let cardPartent = thisModalBody.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
-//         console.log(cardPartent);
-//         let thisModalBodySkills = thisModalBody.querySelectorAll('.skill');
-//         let targetSkills;
-//         for (iii = 0; iii < thisModalBodySkills.length; iii += 1) {
-//           let thisSkill = thisModalBodySkills[iii];
-//           let thisSkillText = thisSkill.textContent.toLowerCase();
-//           // targetSkills.push(thisSkillText);
-//           targetSkills += thisSkillText;
-//           console.log('targetSkills is: ' + targetSkills);
-//         }
-//
-//         for (iii = 0; iii < checkedSkills.length; iii += 1) {
-//           let thisCheckedSkill = checkedSkills[iii];
-//           console.log('thisCheckedSkill is ' + thisCheckedSkill)
-//
-//           if (targetSkills.includes(thisCheckedSkill)) {
-//             cardPartent.classList.add('d-flex');
-//             cardPartent.classList.remove('d-none');
-//           } else {
-//             cardPartent.classList.remove('d-flex');
-//             cardPartent.classList.add('d-none');
-//           }
-//
-//       }
-//     }
-// }
-
 function checkViewdButton() {
   for (i = 0; i < buttonsAll.length; i += 1) {
     let thisButton = buttonsAll[i];
