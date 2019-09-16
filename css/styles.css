@@ -68,15 +68,10 @@ div.jumbotron {
 /*******************************
   card
 *******************************/
-.modal-dialog {
 
-}
-.modal-content {
-
-}
 button.viewed::before {
-  content:"✔";
-  color: blue;
+  content:"✓";
+  font-family: 'Helvetica', sans-serif;
   display:inline-block;
   width: 1em;
   height: 1em;
@@ -160,5 +155,22 @@ button.viewed::before {
 .project-icon:hover, .graphic-dashoard:hover {
   opacity: .6;
   transform: scale(1);
+}
 
+@media (max-width: 578px) {
+  .project-icon {
+    max-width: 300px;
+    width: 40%;
+    margin-bottom: -1.5em
+  }
+}
+
+/*******************************
+  contact elements
+*******************************/
+.contact-icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+  display: inline-block;
 }
